@@ -62,6 +62,7 @@ public class Main {
             return search(root.right, key);
         }
     }
+
 //    Ques3: delete node from the BST
     public static Node delete(Node root, int val) {
         if (root.data > val) {
