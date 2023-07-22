@@ -103,9 +103,6 @@ public class Main {
         return root;
     }
 
-
-
-
     public static void main(String[] args) {
         int values[] = {8, 5, 3, 6, 10, 11, 14};
         Node root = null;
