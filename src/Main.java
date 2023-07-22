@@ -9,6 +9,9 @@
 //            for a value in a BST can be done in O(log n) time complexity in the average and best cases, where n is
 //            the number of nodes in the tree. This is because each search operation reduces the search space by half,
 //            similar to how binary search works on a sorted array.
+
+//----------------------------------------------------------------------------------------------------------------------
+
 import java.util.*;
 public class Main {
 
@@ -21,6 +24,7 @@ public class Main {
             this.data = data;
         }
     }
+
         public static Node insert(Node root, int val) {
             if (root == null){
                 root = new Node(val);
