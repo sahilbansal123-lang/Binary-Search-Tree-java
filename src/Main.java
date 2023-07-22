@@ -103,28 +103,7 @@ public class Main {
         return root;
     }
 
-//    Ques4: Print all number in a certain range
 
-    public static void printInRange(Node root, int r1, int r2) {
-
-        if (root == null){
-            return;
-        }
-
-        // Case1
-        if (root.data >= r1 && root.data <= r2) {
-            printInRange(root.left , r1, r2);
-            System.out.print(root.data + " ");
-            printInRange(root.right, r1, r2);
-        }
-        // Case2
-        else if (root.data >= r1){
-            printInRange(root.left, r1, r2);
-        }
-        else {
-            printInRange(root.right, r1, r2);
-        }
-    }
 
 
     public static void main(String[] args) {
@@ -140,7 +119,6 @@ public class Main {
 //       delete(root, 2);
 //       inOrder(root);
         System.out.println();
-        printInRange(root, 4, 7);
         System.out.println();
     }
 }
