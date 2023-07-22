@@ -125,26 +125,7 @@ public class Main {
             printInRange(root.right, r1, r2);
         }
     }
-//  Ques6: Print all paths
-    public static void printAllPaths(Node root, ArrayList<Integer>pathNodes) {
-        if (root == null){
-            return;
-        }
-        pathNodes.add(root.data);
-        if (root.left == null && root.right == null){
-            printPath(pathNodes);
-        } else {
-            printAllPaths(root.left, pathNodes);
-            printAllPaths(root.right, pathNodes);
-        }
-        pathNodes.remove(pathNodes.size()-1);
-    }
 
-    private static void printPath(ArrayList<Integer> pathNodes) {
-        for (int i = 0; i < pathNodes.size(); i++) {
-            System.out.print(pathNodes.get(i) + "->");
-        }System.out.println();
-    }
 
     public static void main(String[] args) {
         int values[] = {8, 5, 3, 6, 10, 11, 14};
@@ -161,6 +142,5 @@ public class Main {
         System.out.println();
         printInRange(root, 4, 7);
         System.out.println();
-        printAllPaths(root,new ArrayList<>());
     }
 }
