@@ -15,15 +15,15 @@
 import java.util.*;
 public class Main {
 
-    static class Node {
-        int data;
-        Node left;
-        Node right;
+        static class Node {
+            int data;
+            Node left;
+            Node right;
 
-        Node(int data) {
-            this.data = data;
+            Node(int data) {
+                this.data = data;
+            }
         }
-    }
 
         public static Node insert(Node root, int val) {
             if (root == null){
@@ -31,8 +31,10 @@ public class Main {
                 return root;
             }
             if (root.data > val){
+                // Root ke left mein insertion
                 root.left = insert(root.left, val);
             } else {
+                // Root ke right mein insertion
                 root.right = insert(root.right, val);
             }
             return root;
