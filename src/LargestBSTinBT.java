@@ -32,6 +32,7 @@ public class LargestBSTinBT {
 
         Info leftInfo = largestBst(root.left);
         Info rightInfo = largestBst(root.right);
+        // This Info is for the curr root
         int size = leftInfo.size + rightInfo.size + 1;
         int min = Math.min(root.data, Math.min(leftInfo.min, rightInfo.min));
         int max = Math.max(root.data, Math.max(leftInfo.max, rightInfo.max));
@@ -50,6 +51,8 @@ public class LargestBSTinBT {
         return new Info(false, size, min, max);
     }
 
+    public static void main(String[] args) {
 
+    }
 
 }
