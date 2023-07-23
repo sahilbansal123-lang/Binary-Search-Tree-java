@@ -15,7 +15,7 @@ public class ConvertBSTtoBalancedBST {
 
     public static void getInorder(Node root, ArrayList<Integer> inorder) {
         if (root == null) {
-            return null;
+            return;
         }
 
         getInorder(root.left, inorder);
